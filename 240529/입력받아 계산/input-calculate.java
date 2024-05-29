@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
-        int a = 18;
-        System.out.println(a + 2);
+        int a = sc.nextInt() + 2;
+        System.out.println(a);
     }
 }
