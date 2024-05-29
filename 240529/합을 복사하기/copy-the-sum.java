@@ -7,9 +7,9 @@ public class Main {
         b = a + b + c;
         c = a + b + c;
 
-        System.out.print(a);
-        System.out.print(a);
-        System.out.print(a);
+        System.out.print(a + " ");
+        System.out.print(a + " ");
+        System.out.print(a + " ");
 
     }
 }
