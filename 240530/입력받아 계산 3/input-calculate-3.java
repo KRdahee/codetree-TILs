@@ -4,8 +4,11 @@ public class Main {
     public static void main(String[] args) {
     
     Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+    
+    int a = sc.nextInt();
+    
+    int b = sc.nextInt(); // \n과 같은 의미로 쓰여진다.
+
     System.out.println(a * b);
 
 
