@@ -9,8 +9,7 @@ public class Main {
     int a = sc.nextInt();
     int b = sc.nextInt();
 
-    System.out.print(a);
-    System.out.print(" " + b + " ");
-    System.out.print(a + b);
+    System.out.printf("%d %d %d", a , b , a+b);
+
     }
 }
