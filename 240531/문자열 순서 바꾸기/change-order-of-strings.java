@@ -6,12 +6,12 @@ public class Main {
     
     Scanner sc = new Scanner(System.in);
 
-    char s , t;
+    String s , t;
 
-    t = sc.next().charAt(0);
-    s = sc.next().charAt(0);
+    t = sc.next();
+    s = sc.next();
 
-    System.out.println(t);
     System.out.println(s);
+    System.out.println(t);
     }
 }
