@@ -8,9 +8,9 @@ public class Main {
 
     sc.useDelimiter("-");
 
-    String a; //010을 위해서
+    String a; //010을 위해서 0으로 시작되기 때문에 문자열로 받기.
     a = sc.next();
-    
+
     int x = sc.nextInt();
     int y = sc.nextInt();
     
