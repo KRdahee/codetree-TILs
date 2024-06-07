@@ -8,7 +8,7 @@ import java.util.Scanner;
     int a = sc.nextInt();
     int b = sc.nextInt();
 
-    System.out.println(b + a + "" + a + b);
+    System.out.println((b + a) + " " + ((b+a)+b));
 
     }
 }
