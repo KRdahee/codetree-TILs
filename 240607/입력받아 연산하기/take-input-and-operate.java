@@ -9,5 +9,5 @@ public class Main {
     int b = sc.nextInt();
 
     System.out.println(a + 87);
-    System.out.println(10 / b);
+    System.out.println(b % 10);
 }
