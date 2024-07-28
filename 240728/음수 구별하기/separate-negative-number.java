@@ -11,7 +11,6 @@ public class Main {
             a -= 1;
         }
 
-        System.out.println(a);
-        System.out.println("minus");
+        System.out.println(a + "\nminus");
     }
 }
