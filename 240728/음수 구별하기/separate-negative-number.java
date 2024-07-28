@@ -6,11 +6,19 @@ public class Main {
         int a = sc.nextInt();
 
         if (a > 14) {
-            a += 0;
+            // Do nothing for positive values greater than 14
             System.out.println(a);
-            a -= 1;
+            a -= 1; // Decrease a by 1 if a > 14
+        } else {
+            // Print the value of a
+            System.out.println(a);
+        }
+        
+        // Print "minus" only if a is negative
+        if (a < 0) {
+            System.out.println("minus");
         }
 
-        System.out.println(a + "\nminus");
+        sc.close(); // Close the scanner to release resources
     }
 }
