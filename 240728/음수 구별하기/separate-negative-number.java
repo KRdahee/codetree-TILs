@@ -6,9 +6,9 @@ public class Main {
         int a = sc.nextInt();
 
         if (a > 20) {
-            // Do nothing for positive values greater than 14
+            // Do nothing for positive values greater than 20
             System.out.println(a);
-            a -= 1; // Decrease a by 1 if a > 14
+            a -= 1; // Decrease a by 1 if a > 20
         } else {
             // Print the value of a
             System.out.println(a);
