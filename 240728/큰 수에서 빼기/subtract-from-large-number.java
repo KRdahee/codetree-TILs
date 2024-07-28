@@ -2,12 +2,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-    
-    Scanner sc =  new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-    int a = sc.nextInt();
-    int b = sc.nextInt();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-    System.out.println(b - a);
+        System.out.println(b - a);
+
+        sc.close(); // Scanner 자원 반환
     }
 }
