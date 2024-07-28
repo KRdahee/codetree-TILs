@@ -8,8 +8,11 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        // b와 a의 차이 출력
-        System.out.println(b - a);
+        // 큰 수에서 작은 수를 빼기 위해 Math.max와 Math.min 사용
+        int difference = Math.max(a, b) - Math.min(a, b);
+
+        // 차 출력
+        System.out.println(difference);
 
         sc.close(); // Scanner 자원 반환
     }
