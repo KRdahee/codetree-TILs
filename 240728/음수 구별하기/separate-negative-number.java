@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
-        if (a > 20) {
+        if (a > 14) {
             a += 0;
             System.out.println(a);
             a -= 1;
