@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
-        if (a > 14) {
+        if (a > 20) {
             // Do nothing for positive values greater than 14
             System.out.println(a);
             a -= 1; // Decrease a by 1 if a > 14
