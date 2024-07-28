@@ -20,7 +20,7 @@ public class Main {
         // Print the average as an integer (without decimal places)
         System.out.println((int)average); // Casting to int to remove decimal places
 
-        System.out.println(sum - (int)average;)
+        System.out.println(sum - (int)average);
         
         sc.close(); // Close the scanner to release resources
     }
