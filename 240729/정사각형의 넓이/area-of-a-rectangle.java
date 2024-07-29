@@ -10,13 +10,13 @@ public class Main {
         // 정사각형의 넓이 계산
         int area = n * n;
         
+        // 정사각형의 넓이 출력
+        System.out.println(area);
         // n이 5보다 작으면 "tiny" 출력
         if (n < 5) {
             System.out.println("tiny");
         }
         
-        // 정사각형의 넓이 출력
-        System.out.println(area);
         
         sc.close(); // Scanner 자원 반환
     }
