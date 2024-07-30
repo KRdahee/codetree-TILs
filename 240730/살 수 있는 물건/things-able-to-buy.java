@@ -12,11 +12,7 @@ public class Main {
             System.out.println("mask");
         } else if (stuff == 0) {
             System.out.println("no");
-        } else {
-            // Handle any other cases here if needed
-            System.out.println("Unknown case");
         }
-
         sc.close();
     }
 }
