@@ -9,7 +9,9 @@ public class Main {
 
     if(stuff >= 3000){
         System.out.println("book");
-    }else if(stuff >= 1000){
+    }else if(stuff <= 1500 ){
+        System.out.println("mask");
+    }else if(stuff == 0){
         System.out.println("no");
     }
     }
