@@ -6,13 +6,14 @@ public class Main {
 
         int stuff = sc.nextInt();
 
-        if (stuff >= 3000) {
-            System.out.println("book");
-        } else if (stuff <= 1500 && stuff > 0) {
-            System.out.println("mask");
-        } else if (stuff == 0) {
+        if (stuff == 0) {
             System.out.println("no");
+        } else if (stuff >= 3000) {
+            System.out.println("book");
+        } else if (stuff <= 1500) {
+            System.out.println("mask");
         }
+
         sc.close();
     }
 }
