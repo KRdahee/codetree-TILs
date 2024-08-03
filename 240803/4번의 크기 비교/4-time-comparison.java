@@ -15,16 +15,16 @@ public class Main {
         // 입력 받은 후 Scanner 객체를 닫습니다.
         scanner.close();
 
-        // a가 b보다 같거나 큰지
+        // 첫 번째 줄에 a가 b보다 크다면 1을, 크지 않다면 0을 출력합니다.
         System.out.println(a > b ? 1 : 0);
 
-        // a가 b보다 큰지
+        // 두 번째 줄에 a가 c보다 크다면 1을, 크지 않다면 0을 출력합니다.
         System.out.println(a > c ? 1 : 0);
 
-        // b가 a보다 같거나 큰지
+        // 세 번째 줄에 a가 d보다 크다면 1을, 크지 않다면 0을 출력합니다.
         System.out.println(a > d ? 1 : 0);
 
-        // b가 a보다 큰지
+        // 네 번째 줄에 a가 e보다 크다면 1을, 크지 않다면 0을 출력합니다.
         System.out.println(a > e ? 1 : 0);
     }
 }
