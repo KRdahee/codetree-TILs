@@ -1,5 +1,6 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -21,11 +22,13 @@ public class Main {
         // a/b의 값을 계산합니다.
         BigDecimal result = numerator.divide(denominator, 21, RoundingMode.DOWN);
         
+        // DecimalFormat을 사용하여 소수점 21자리까지 포맷팅
+        DecimalFormat df = new DecimalFormat("0.#######################"); // 최대 21자리까지 포맷
+        df.setMinimumFractionDigits(21); // 소수점 21자리 유지
+        df.setMaximumFractionDigits(21); // 소수점 21자리 유지
+
         // 결과를 문자열로 변환하여 출력합니다.
-        // setScale을 사용하여 소수점 21자리까지 맞추어 출력
-        result = result.setScale(21, RoundingMode.DOWN);
-        
-        // 결과를 출력합니다.
-        System.out.println(result.toPlainString());
+        String formattedResult = df.format(result);
+        System.out.println(formattedResult);
     }
 }
