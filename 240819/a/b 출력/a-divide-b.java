@@ -1,5 +1,4 @@
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.Scanner;
 
@@ -20,9 +19,13 @@ public class Main {
         BigDecimal denominator = new BigDecimal(b);
         
         // a/b의 값을 계산합니다.
-        BigDecimal result = numerator.divide(denominator, new MathContext(21, RoundingMode.DOWN));
+        BigDecimal result = numerator.divide(denominator, 21, RoundingMode.DOWN);
         
         // 결과를 문자열로 변환하여 출력합니다.
+        // setScale을 사용하여 소수점 21자리까지 맞추어 출력
+        result = result.setScale(21, RoundingMode.DOWN);
+        
+        // 결과를 출력합니다.
         System.out.println(result.toPlainString());
     }
 }
