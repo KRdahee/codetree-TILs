@@ -1,34 +1,30 @@
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scanner 객체를 생성하여 사용자 입력을 받습니다.
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
-        // 두 정수를 입력받습니다.
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        
-        // Scanner 객체를 닫습니다.
-        scanner.close();
-        
-        // BigDecimal 객체를 생성하여 a와 b를 나타냅니다.
-        BigDecimal numerator = new BigDecimal(a);
-        BigDecimal denominator = new BigDecimal(b);
-        
-        // a/b의 값을 계산합니다.
-        BigDecimal result = numerator.divide(denominator, 21, RoundingMode.DOWN);
-        
-        // DecimalFormat을 사용하여 소수점 21자리까지 포맷팅
-        DecimalFormat df = new DecimalFormat("0.#######################"); // 최대 21자리까지 포맷
-        df.setMinimumFractionDigits(21); // 소수점 21자리 유지
-        df.setMaximumFractionDigits(21); // 소수점 21자리 유지
+        // 변수 선언
+        int a, b;
 
-        // 결과를 문자열로 변환하여 출력합니다.
-        String formattedResult = df.format(result);
-        System.out.println(formattedResult);
+        // 입력
+        a = sc.nextInt();
+        b = sc.nextInt();
+
+        // 정수 부분을 먼저 출력합니다.
+        System.out.print(a / b + ".");
+        
+        // a를 b로 나눈 나머지를 시작으로
+        // 소수점 자리를 하나씩 계산합니다.
+        a %= b;
+        for(int i = 0; i < 20; i++) {
+            // 나머지에 10 곱한 값을 기준으로
+            // b로 나누었을 떄의 몫을 구해줍니다.
+            a *= 10;
+            System.out.print(a / b);
+            
+            // a를 b로 나눈 나머지를 게속 갱신해줍니다.
+            a %= b;
+        }
     }
 }
