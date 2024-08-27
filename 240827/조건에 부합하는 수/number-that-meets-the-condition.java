@@ -19,7 +19,9 @@ public class Main {
             boolean condition3 = (i % 7) < 4;
             
             // 모든 조건을 만족하지 않는 경우
-            if (!(condition1 && condition2 && condition3)) {
+            boolean doesNotSatisfyAll = !(condition1 && condition2 && condition3);
+            
+            if (doesNotSatisfyAll) {
                 results.add(i);
             }
         }
