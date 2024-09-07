@@ -19,7 +19,7 @@ public class Main {
             // 두 번째 정사각형
             for (int j = 0; j < n; j++) {
                 System.out.print("*");
-
+            }
             // 줄 바꿈
             System.out.println();
         }
