@@ -16,10 +16,10 @@ public class Main {
         // 위쪽 부분: 1부터 n까지
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j < i; j++) {
-                System.out.print("");
                 System.out.print("*");
             }
             System.out.println(); // 줄 바꿈
+            System.out.println(); // 한 줄 추가로 띄움
         }
 
         // 아래쪽 부분: n-1부터 1까지
@@ -28,6 +28,7 @@ public class Main {
                 System.out.print("*");
             }
             System.out.println(); // 줄 바꿈
+            System.out.println(); // 한 줄 추가로 띄움
         }
 
         scanner.close();
