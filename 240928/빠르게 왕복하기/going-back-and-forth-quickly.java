@@ -22,18 +22,19 @@ public class Main {
             people.add(new Person(timeToB, timeToA));
         }
 
-        // A->B로 가는 시간 정렬
+        // A->B로 가는 시간 기준으로 정렬
         Collections.sort(people, Comparator.comparingInt(p -> p.timeToB));
 
-        // 최소 시간 계산
-        int totalTime = 0;
-        int timeAtB = 0;
+        // 총 시간을 계산
+        int totalTime = 0; // 총 시간
+        int currentBTime = 0; // 현재 B 지점에 도착한 시간
 
         for (Person person : people) {
-            // A->B로 이동
-            timeAtB += person.timeToB;
-            // B->A로 이동
-            totalTime = Math.max(totalTime, timeAtB + person.timeToA);
+            // A에서 B로 이동
+            currentBTime += person.timeToB;
+
+            // B에서 A로 이동
+            totalTime = Math.max(totalTime, currentBTime + person.timeToA);
         }
 
         System.out.println(totalTime);
