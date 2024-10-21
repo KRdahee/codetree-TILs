@@ -1,23 +1,29 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                // 첫 번째 행, 마지막 행 또는 대각선에 별을 출력
-                if (i == 0 || i == n - 1 || j == 0 || j == n - 1 || j == i) {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
+        // 여기에 코드를 작성해주세요.
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i = 1; i<=n; i++){
+            if(i==1){
+                for(int j = 0; j<n; j++){
+                    System.out.print("* ");
                 }
-                System.out.print(" "); // 별과 별 사이에 공백 추가
+            }else{
+                for(int k = 1; k<=n; k++){
+                    if(k==n){
+                        System.out.print("* ");
+                    }
+                    else if(k<i ){
+                        System.out.print("* ");
+                    }else{
+                        System.out.print("  ");
+                    }
+                }
+                
             }
-            System.out.println(); // 다음 줄로 이동
+            System.out.println();
         }
-        
-        scanner.close();
     }
 }
