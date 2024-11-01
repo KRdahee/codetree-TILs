@@ -6,10 +6,16 @@ public class Main {
         int n = scanner.nextInt();
         scanner.close();
 
+        int currentNum;
+        
         for (int i = 0; i < n; i++) {
+            currentNum = 9 - (i % 9); // 행에 따라 시작 숫자 결정
             for (int j = 0; j < n; j++) {
-                int num = 9 - ((i + j) % 9); // 계산된 숫자
-                System.out.print(num);
+                System.out.print(currentNum);
+                currentNum--;
+                if (currentNum < 1) { // 1보다 작으면 9로 리셋
+                    currentNum = 9;
+                }
             }
             System.out.println(); // 각 행의 끝에서 줄 바꿈
         }
