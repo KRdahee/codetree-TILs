@@ -1,1 +1,1 @@
-자바 공부 시작! 코드 트리로 매일 연습!! 
+Java based_CODETREE STUDY
