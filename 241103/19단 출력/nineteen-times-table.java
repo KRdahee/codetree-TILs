@@ -8,7 +8,7 @@ public class Main {
                 
                 // j가 19가 아닌 경우 '/'를 추가하여 구분
                 if (j % 2 == 0 && j < 19) {
-                    System.out.println(" / ");
+                    System.out.print(" / ");
                 }
             }
             System.out.println(); // 각 i에 대해 줄바꿈
