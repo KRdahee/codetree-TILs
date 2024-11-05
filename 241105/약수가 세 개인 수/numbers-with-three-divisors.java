@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scanner 객체를 통해 입력받기
+        // Scanner 객체를 통해 입력 받기
         Scanner sc = new Scanner(System.in);
         
         // start와 end 값을 입력받음
@@ -16,8 +16,8 @@ public class Main {
         for (int i = start; i <= end; i++) {
             int sum = 0; // 약수의 개수를 셈
             
-            // i의 약수를 찾는 부분
-            for (int j = 1; j <= i / 2; j++) {
+            // i의 약수를 찾는 부분 (1부터 i까지 검사)
+            for (int j = 1; j <= i; j++) {
                 if (i % j == 0) {
                     sum++; // 나누어 떨어지면 sum을 증가시킴
                 }
