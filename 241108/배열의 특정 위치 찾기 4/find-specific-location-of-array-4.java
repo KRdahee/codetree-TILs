@@ -8,7 +8,7 @@ public class Main {
         int sum = 0;    // 2의 배수 합을 구하는 변수
         
         // 10개의 정수를 입력받음
-        while (true) {
+        for (int i = 0; i < 10; i++) {
             int num = scanner.nextInt();
             
             // 0이 입력되면 종료
