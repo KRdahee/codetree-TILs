@@ -4,27 +4,24 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        // 입력받을 최대 정수 개수를 설정
+        // 최대 100개의 정수를 저장할 배열
         int[] numbers = new int[100];
         int index = 0;
         
-        // 정수 입력 받기
+        // 정수 입력받기
         while (sc.hasNextInt()) {
             int num = sc.nextInt();
+            numbers[index++] = num;
+            
+            // 0을 만나면 그 이전 3개의 수의 합을 출력
             if (num == 0) {
+                // 0이 등장할 때 그 이전 3개의 수 합을 계산
+                int sum = numbers[index-2] + numbers[index-3] + numbers[index-4];
+                System.out.println(sum);
                 break;
             }
-            numbers[index++] = num;
         }
         
-        // 0이 등장할 때마다 그 앞의 3개 숫자의 합을 출력
-        for (int i = 3; i < index; i++) {
-            if (numbers[i] == 0) {
-                int sum = numbers[i-1] + numbers[i-2] + numbers[i-3];
-                System.out.println(sum);
-            }
-        }
-
         sc.close();
     }
 }
